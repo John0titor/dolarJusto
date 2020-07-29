@@ -3,7 +3,7 @@ library(ecoseries)
 library(twitteR)
 
 getSymbols('CPIAUCSL', src = "FRED")
- 
+
 cpi.eua = window(ts(CPIAUCSL, start=c(1947,01), freq=12),
 start=c(1994,07))
  
